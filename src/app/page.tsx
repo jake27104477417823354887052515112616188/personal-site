@@ -14,6 +14,7 @@ export default function Home() {
       <Navbar />
       <About />
       {/* <Footer /> */}
+      
     </div>
 
     {/* Right column */}
