@@ -1,4 +1,6 @@
 const Footer = ({ className = "" }: { className?: string }) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/personal-site' : '';
+
   return (
     <footer className={`text-white py-6 ${className}`}>
       <div className="container mx-auto grid grid-cols-2 gap-50">
@@ -6,13 +8,13 @@ const Footer = ({ className = "" }: { className?: string }) => {
         <div className="text-left">
           <ul className="space-y-2">
             <li>
-              <a href="/" className="hover:text-gray-500 transition duration-300">About</a>
+              <a href={`${basePath}/`} className="hover:text-gray-500 transition duration-300">About</a>
             </li>
             <li>
-              <a href="/pictures" className="hover:text-gray-500 transition duration-300">Pictures</a>
+              <a href={`${basePath}/pictures`} className="hover:text-gray-500 transition duration-300">Pictures</a>
             </li>
             <li>
-              <a href="/resume" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition duration-300">Resume</a>
+              <a href={`${basePath}/resume`} target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition duration-300">Resume</a>
             </li>
           </ul>
         </div>

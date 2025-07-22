@@ -6,90 +6,91 @@ import Footer from '../components/Footer';
 import DotGrid from '../components/DotGrid';
 
 const PicturesPage = () => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/personal-site' : '';
+
   const items = [
     {
       id: "1",
-      img: "/images/climb.JPG",
-      url: "/images/climb.JPG",
+      img: `${basePath}/images/climb.JPG`,
+      url: `${basePath}/images/climb.JPG`,
       height: 400,
     },
     {
       id: "2",
-      img: "/images/IMG_0603.jpg",
-      url: "/images/IMG_0603.jpg",
+      img: `${basePath}/images/IMG_0603.jpg`,
+      url: `${basePath}/images/IMG_0603.jpg`,
       height: 250,
     },
     {
       id: "3",
-      img: "/images/climber.jpg",
-      url: "/images/climber.jpg",
+      img: `${basePath}/images/climber.jpg`,
+      url: `${basePath}/images/climber.jpg`,
       height: 600,
     },
     {
       id: "4",
-      img: "/images/colors.JPG",
-      url: "/images/colors.JPG",
+      img: `${basePath}/images/colors.JPG`,
+      url: `${basePath}/images/colors.JPG`,
       height: 400,
     },
     {
       id: "5",
-      img: "/images/friends.jpg",
-      url: "/images/friends.jpg",
+      img: `${basePath}/images/friends.jpg`,
+      url: `${basePath}/images/friends.jpg`,
       height: 250,
     },
     {
       id: "6",
-      img: "/images/kirbeter.jpg",
-      url: "/images/kirbeter.jpg",
+      img: `${basePath}/images/kirbeter.jpg`,
+      url: `${basePath}/images/kirbeter.jpg`,
       height: 300,
     },
-        {
+    {
       id: "7",
-      img: "/images/guardsman.jpg",
-      url: "/images/guardsman.jpg",
+      img: `${basePath}/images/guardsman.jpg`,
+      url: `${basePath}/images/guardsman.jpg`,
       height: 300,
     },
     {
       id: "8",
-      img: "/images/no-park.jpg",
-      url: "/images/no-park.jpg",
+      img: `${basePath}/images/no-park.jpg`,
+      url: `${basePath}/images/no-park.jpg`,
       height: 300,
     },
     {
       id: "9",
-      img: "/images/old.jpg",
-      url: "/images/old.jpg",
+      img: `${basePath}/images/old.jpg`,
+      url: `${basePath}/images/old.jpg`,
       height: 300,
     },
     {
       id: "10",
-      img: "/images/sitting.jpg",
-      url: "/images/sitting.jpg",
+      img: `${basePath}/images/sitting.jpg`,
+      url: `${basePath}/images/sitting.jpg`,
       height: 300,
     },
     {
       id: "11",
-      img: "/images/telephone.jpg",
-      url: "/images/telephone.jpg",
+      img: `${basePath}/images/telephone.jpg`,
+      url: `${basePath}/images/telephone.jpg`,
       height: 300,
     },
     {
       id: "12",
-      img: "/images/vansire.jpg",
-      url: "/images/vansire.jpg",
+      img: `${basePath}/images/vansire.jpg`,
+      url: `${basePath}/images/vansire.jpg`,
       height: 300,
     },
     {
       id: "13",
-      img: "/images/yuna.jpg",
-      url: "/images/yuna.jpg",
+      img: `${basePath}/images/yuna.jpg`,
+      url: `${basePath}/images/yuna.jpg`,
       height: 300,
     },
   ];
 
   return (
-
-      <div className="relative min-h-screen">
+    <div className="relative min-h-screen">
       <div className="absolute inset-0 z-0">
         <DotGrid
           dotSize={2}
@@ -110,7 +111,6 @@ const PicturesPage = () => {
         <div></div>
 
         {/* Center column */}
-        
         <div className="relative flex flex-col items-center z-10">
           <Navbar />
           <Masonry
@@ -124,7 +124,7 @@ const PicturesPage = () => {
             blurToFocus={true}
             colorShiftOnHover={false}
           />
-            <Footer className="relative z-20" />
+          <Footer className="relative z-20" />
         </div>
 
         {/* Right column */}
