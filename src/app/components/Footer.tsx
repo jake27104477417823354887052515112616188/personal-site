@@ -9,7 +9,7 @@ const Footer = () => {
               <a href="/" className="hover:text-gray-500 transition duration-300">About</a>
             </li>
             <li>
-              <a href="/about" className="hover:text-gray-500 transition duration-300">Pictures</a>
+              <a href="/pictures" className="hover:text-gray-500 transition duration-300">Pictures</a>
             </li>
             <li>
               <a href="/resume" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition duration-300">Resume</a>
