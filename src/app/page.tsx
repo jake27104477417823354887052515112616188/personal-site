@@ -13,9 +13,9 @@ export default function Home() {
           gap={15}
           baseColor="#202020"
           activeColor="#7c98c9"
-          proximity={120}
-          shockRadius={200}
-          shockStrength={5}
+          proximity={70}
+          shockRadius={100}
+          shockStrength={3}
           resistance={750}
           returnDuration={1.5}
           style={{ width: '100%', height: '100%' }} // Force dimensions
@@ -33,6 +33,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <Navbar />
             <About />
+            <Footer/>
           </div>
 
           {/* Right column */}

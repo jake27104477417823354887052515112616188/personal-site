@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ExperienceItem from "./ExperienceItem";
-import DotGrid from './DotGrid';
 
 const About = () => {
   return (
@@ -14,9 +13,8 @@ const About = () => {
           padding: "0 16px",
         }}
       >
-        {/* Flexbox for text and photo - responsive layout */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-16">
-          {/* Photo Section */}
+          {/* Photo */}
           <div className="flex-shrink-0 order-1 md:order-2">
             <Image
               src="/images/IMG_0603.jpg"
@@ -33,7 +31,7 @@ const About = () => {
             style={{
               width: "100%",
               maxWidth: "400px",
-              flexShrink: 0, // Prevent shrinking
+              flexShrink: 0,
             }}
           >
             <h3 className="text-3xl font-bold mb-4 text-black dark:text-white">
