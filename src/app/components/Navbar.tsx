@@ -19,7 +19,7 @@ const Navbar = () => {
             <span className="relative z-10 hover:text-gray-300 transition duration-300">resume</span>
           </Link>
         </div>
-        <DarkModeToggle />
+        {/* <DarkModeToggle /> */}
       </div>
     </nav>
   );

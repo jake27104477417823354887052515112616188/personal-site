@@ -1,9 +1,11 @@
 import Image from "next/image";
 import ExperienceItem from "./ExperienceItem";
+import DotGrid from './DotGrid';
 
 const About = () => {
   return (
     <section id="about" className="py-24">
+      
       <div
         className="mx-auto text-center"
         style={{
@@ -85,6 +87,7 @@ const About = () => {
             duration="2017 - 2021"
           />
         </div>
+        
       </div>
     </section>
   );
