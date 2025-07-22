@@ -19,8 +19,8 @@ const ExperienceItem = ({ company, position, description, imageSrc, hoverImageSr
     <div
       className={`relative flex flex-col md:flex-row items-center gap-4 p-4 rounded-lg shadow-md transition-shadow`}
       style={{
-        width: "600px", // Fixed width
-        height: "200px", // Fixed height
+        width: "600px", 
+        height: "200px", 
         backgroundImage: isHovered
           ? `linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url(${hoverImageSrc})`
           : "none",
@@ -30,7 +30,6 @@ const ExperienceItem = ({ company, position, description, imageSrc, hoverImageSr
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Static Image */}
       <div className="flex-shrink-0">
         <Image
           src={imageSrc}
@@ -41,12 +40,10 @@ const ExperienceItem = ({ company, position, description, imageSrc, hoverImageSr
         />
       </div>
 
-      {/* Duration */}
       <span className="absolute top-4 right-4 text-sm text-gray-400">
         {duration}
       </span>
 
-      {/* Text Content */}
       <div className="flex-1 flex flex-col justify-between">
         <div>
           <h3 className="text-lg font-bold text-white">{company}</h3>

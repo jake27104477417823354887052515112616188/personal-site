@@ -1,3 +1,5 @@
+"use client";
+
 import Masonry from '../components/Masonry';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -99,18 +101,17 @@ const PicturesPage = () => {
           shockStrength={3}
           resistance={750}
           returnDuration={1.5}
-          style={{ width: '100%', height: '100%' }} // Force dimensions
+          style={{ width: '100%', height: '100%' }}
         />
       </div>
 
-      {/* Grid Layout */}
       <div className="grid grid-cols-[20%_60%_20%] min-h-screen">
         {/* Left column */}
         <div></div>
 
         {/* Center column */}
         
-        <div className="flex flex-col items-center">
+        <div className="relative flex flex-col items-center z-10">
           <Navbar />
           <Masonry
             items={items}
@@ -123,7 +124,7 @@ const PicturesPage = () => {
             blurToFocus={true}
             colorShiftOnHover={false}
           />
-            <Footer />
+            <Footer className="relative z-20" />
         </div>
 
         {/* Right column */}

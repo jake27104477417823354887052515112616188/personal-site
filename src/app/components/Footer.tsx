@@ -1,6 +1,6 @@
-const Footer = () => {
+const Footer = ({ className = "" }: { className?: string }) => {
   return (
-    <footer className="text-white py-6">
+    <footer className={`text-white py-6 ${className}`}>
       <div className="container mx-auto grid grid-cols-2 gap-50">
         {/* Left Column */}
         <div className="text-left">
