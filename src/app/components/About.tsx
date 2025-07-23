@@ -46,6 +46,7 @@ const About = () => {
               </p>
               <p className="text-lg text-black dark:text-gray-500 mb-4">
                 I have always been curious with the intersection of technology and its impact on the world around us.
+                I am also gay.
               </p>
             </div>
           </div>
