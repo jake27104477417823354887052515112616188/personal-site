@@ -89,8 +89,8 @@ const PicturesPage = () => {
     },
     {
       id: "14",
-      img: `${basePath}/images/styrofoam.jpg`,
-      url: `${basePath}/images/styrofoam.jpg`,
+      img: `${basePath}/images/styrofoam.png`,
+      url: `${basePath}/images/styrofoam.png`,
       height: 300,
     },
   ];
