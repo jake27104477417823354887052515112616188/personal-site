@@ -87,6 +87,12 @@ const PicturesPage = () => {
       url: `${basePath}/images/yuna.jpg`,
       height: 300,
     },
+    {
+      id: "14",
+      img: `${basePath}/images/styrofoam.jpg`,
+      url: `${basePath}/images/styrofoam.jpg`,
+      height: 300,
+    },
   ];
 
   return (

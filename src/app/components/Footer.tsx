@@ -8,13 +8,13 @@ const Footer = ({ className = "" }: { className?: string }) => {
         <div className="text-left">
           <ul className="space-y-2">
             <li>
-              <a href={`${basePath}/`} className="hover:text-gray-500 transition duration-300">About</a>
+              <a href="/" className="hover:text-gray-500 transition duration-300">About</a>
             </li>
             <li>
-              <a href={`${basePath}/pictures`} className="hover:text-gray-500 transition duration-300">Pictures</a>
+              <a href="/pictures" className="hover:text-gray-500 transition duration-300">Pictures</a>
             </li>
             <li>
-              <a href={`${basePath}/resume`} target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition duration-300">Resume</a>
+              <a href="/resume" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition duration-300">Resume</a>
             </li>
           </ul>
         </div>
